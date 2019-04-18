@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 16pt;
+	box-sizing: border-box;
+}
+
+header > nav ul{
+	list-style: none;
+	background-color: #8f8f8f;
+	text-align: center;
+}
+
+header > nav ul li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header > nav ul li > a{
+	text-decoration: none;
+	color: #000000;
+}
+main{
+	margin: 10px;
+}
+footer{
+	text-align: center;
+	background-color: #8f8f8f;
+	padding: 10px;
+	position: fixed;
+	/*padding-top: 10px;*/
+	bottom: 0;
+	width: 100%;
+}
+/* contact.html file */
+.contact-form, .social-media{
+	position: relative;
+	float: left;
+	width: 48%;
+	margin-left: 2%;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	padding: 10px;
+}
+/* end s here */
+.myPhoto{
+	text-align: center;
+	color: #FBBC05;
+
+}
+.myPhoto img{
+	border-radius: 50%;
+	border:2px solid black;
+}
+
+.contact-form h2, .social-media h3, .gallery h1{
+	text-align: center;
+
+}
+.contact-form *{
+	bottom: 10px;
+}
+
+.contact-form input[type="submit"]{
+	display: block;
+	margin: 0 auto;
+	background-color: #0a84ff;
+	color: #ffffff;
+	border-radius: 10px;
+
+}
+
+.contact-form input[type="submit"]:hover{
+	background-color: #000000;
+	opacity: 0.9;
+
+}
+
+.social-media a{
+	display: block;
+	text-decoration: none;
+	color: #000000;
+	padding: 2px;
+
+}
+
+/*Gallery style*/
+
+.gallery figure img{
+	width:  200px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+.gallery{
+	text-align: center;
+}
+
+.gallery figure{
+	display: inline-block;
+	border: 2px solid black;
+	position: relative;
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+	font-style: italic;
+}

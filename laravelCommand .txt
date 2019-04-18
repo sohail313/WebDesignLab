@@ -1,0 +1,19 @@
+node -v
+
+composer
+
+laravel
+
+laravel new blog
+-> npm install
+-> cp .env.example .env
+
+=> key: [base64:Rcz6JuIpMwKor+DtTsQQY0rIcSfCmHtR/Zxm0sTEihc=]
+
+
+-> npm run dev	// need to run again if changed the js and css file
+
+-> npm run watch	//loop through check automatics
+
+
+//there is no / in include there is "."

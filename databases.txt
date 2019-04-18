@@ -1,0 +1,47 @@
+mysql> use AIKTC;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> desc tables;
+ERROR 1146 (42S02): Table 'AIKTC.tables' doesn't exist
+mysql> show tables;
++-----------------+
+| Tables_in_AIKTC |
++-----------------+
+| Students        |
+| users           |
++-----------------+
+2 rows in set (0.00 sec)
+
+
+mysql> desc users;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| username | varchar(50) | NO   | PRI | NULL    |       |
+| name     | varchar(50) | NO   |     | NULL    |       |
+| mobile   | varchar(13) | NO   | UNI | NULL    |       |
+| email    | varchar(50) | NO   | UNI | NULL    |       |
+| rollno   | varchar(10) | YES  | UNI | NULL    |       |
+| pass     | text        | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+
+mysql> desc Students;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| rollno  | varchar(9)  | NO   | PRI | NULL    |       |
+| name    | varchar(30) | NO   |     | NULL    |       |
+| gender  | varchar(10) | NO   |     | NULL    |       |
+| address | text        | NO   |     | NULL    |       |
+| dob     | date        | NO   |     | NULL    |       |
+| sem     | varchar(5)  | NO   |     | NULL    |       |
+| email   | varchar(50) | NO   | UNI | NULL    |       |
+| dept    | varchar(20) | NO   |     | NULL    |       |
+| batch   | varchar(10) | NO   |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
